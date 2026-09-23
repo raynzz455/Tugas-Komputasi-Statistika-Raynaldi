@@ -1,73 +1,47 @@
-# Tugas Manajemen Data — Dataset Iris
+# Kumpulan Tugas Komputasi Statistika
 
 | | |
 |---|---|
 | **Nama** | Raynaldi |
 | **NIM** | 3338250031 |
+| **Program Studi** | Statistika |
 | **Mata Kuliah** | Komputasi Statistika |
 | **Semester / Kelas** | 3 / 3A |
 | **Universitas** | Sultan Ageng Tirtayasa |
 
 ---
 
-## Deskripsi
+## Deskripsi Repository
 
-Tugas ini mengerjakan manajemen data menggunakan dataset `iris` yang sudah tersedia di R. Operasi yang dilakukan meliputi akses variabel, identifikasi tipe data, pembuatan variabel turunan, rename kolom, filtering, subsetting, dan pengurutan data.
-
----
-
-## Langkah Pengerjaan
-
-### 1. Tampilkan Data `Sepal.Length`
-
-Mengakses satu variabel dari dataframe menggunakan operator `$`.
+Repository ini berfungsi sebagai wadah tunggal untuk mengumpulkan seluruh tugas pemrograman R pada mata kuliah **Komputasi Statistika**. Untuk menjaga kerapian dan efisiensi, seluruh tugas dari berbagai minggu perkuliahan tidak dipisah ke dalam repository yang berbeda, melainkan disatukan di dalam satu repository ini. 
 
 ---
 
-### 2. Tipe Data Tiap Kolom
+## Struktur Repository & Penamaan File
 
-Menggunakan `sapply()` untuk mengecek tipe data setiap kolom sekaligus.
+Setiap tugas mingguan akan diunggah dalam bentuk file script R (`.R`). Tidak ada folder khusus untuk tiap minggu; pemisahan tugas hanya bergantung pada nama file itu sendiri. 
 
----
+Penamaan file di dalam repository ini menggunakan format standar berikut:
 
-### 3. Buat Variabel Baru `turunan`
+> **Format:** 
+> `[Nama]_[NIM]_KomStat[Minggu Ke-].R`
 
-Variabel `turunan` dibuat dari `Sepal.Width` menggunakan `ifelse()`. Nilai `"Besar"` jika `Sepal.Width > 3`, nilai `"Kecil"` jika sebaliknya.
-
----
-
-### 4. Ubah Nama Variabel `turunan` Menjadi `sepal`
-
-Rename kolom menggunakan `names()` dengan indexing berbasis kondisi logika.
+**Contoh Penamaan File:**
+- `Raynaldi_3338250031_KomStat1.R` (Untuk tugas minggu ke-1)
+- `Raynaldi_3338250031_KomStat2.R` (Untuk tugas minggu ke-2)
+- dan seterusnya mengikuti minggu perkuliahan berjalan.
 
 ---
 
-### 5. Filter Data `sepal == "Besar"` dari Species `virginica`
+## Tools yang Digunakan
 
-Subsetting baris menggunakan operator `[]` dengan dua kondisi sekaligus.
-
----
-
-### 6. Cek Jumlah Tiap Species
-
-Menggunakan `table()` untuk menghitung frekuensi tiap nilai dalam kolom `Species`.
+- **R**
+- **RStudio**
+- **Git**
+- **GitHub**
 
 ---
-
-### 7. Pecah Data Menjadi 3 Data Frame per Species
-
-Setiap data frame berisi data khusus untuk satu species.
-
----
-
-### 8. Urutkan Tiap Data Frame Berdasarkan `Sepal.Width`
-
-Pengurutan menggunakan `order()` yang mengembalikan indeks baris secara terurut.
-
-```
-
-
 
 ## Referensi
 
-Budiaji, W. (2026). *Manajemen Data*. Mata Kuliah Komputasi Statistika, Universitas Sultan Ageng Tirtayasa.
+Budiaji, W. (2026). *Materi Pembelajaran / Modul Mata Kuliah Komputasi Statistika*, Universitas Sultan Ageng Tirtayasa.
